@@ -14,7 +14,7 @@ ShopEase is a modern, user-friendly e-commerce website designed to provide an in
 * responsive images,
 * embeded fonts,
 
-
+LINK : https://ketkitakalkar.github.io/ShopEase/
 ----------------------------------------------------------------
 
 
