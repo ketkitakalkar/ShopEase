@@ -1,0 +1,598 @@
+/*GENERAL STYLES mobile first, width of screen: 600px*/
+/* css style sheet  */
+/*FONTS-*/
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Medium.eot');
+    src: url('../fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-Medium.woff2') format('woff2'),
+        url('../fonts/Raleway-Medium.woff') format('woff'),
+        url('../fonts/Raleway-Medium.ttf') format('truetype'),
+        url('../fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-MediumItalic.eot');
+    src: url('../fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Raleway-MediumItalic.woff') format('woff'),
+        url('../fonts/Raleway-MediumItalic.ttf') format('truetype'),
+        url('../fonts/Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Light.eot');
+    src: url('../fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-Light.woff2') format('woff2'),
+        url('../fonts/Raleway-Light.woff') format('woff'),
+        url('../fonts/Raleway-Light.ttf') format('truetype'),
+        url('../fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-LightItalic.eot');
+    src: url('../fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Raleway-LightItalic.woff2') format('woff2'),
+        url('../fonts/Raleway-LightItalic.woff') format('woff'),
+        url('../fonts/Raleway-LightItalic.ttf') format('truetype'),
+        url('../fonts/Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Bold.eot');
+    src: url('../fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-Bold.woff') format('woff'),
+        url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Italic.eot');
+    src: url('../fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-Italic.woff') format('woff'),
+        url('../fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-Regular.eot');
+    src: url('../fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-Regular.woff') format('woff'),
+        url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay-BoldItalic.eot');
+    src: url('../fonts/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+        url('../fonts/PlayfairDisplay-BoldItalic.woff') format('woff'),
+        url('../fonts/PlayfairDisplay-BoldItalic.ttf') format('truetype'),
+        url('../fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+/*End of generated fonts--*/
+*{
+  box-sizing: border-box;
+  outline: none;
+}
+html{
+  /*max-width: 600px;just for styling mobile*/
+  min-width: 480px; /*setting minimal for mobile, not specified in requirements*/
+
+}
+body {
+  font-size: 0.875rem; /*desktop 16px; mobile: 14px=0.875rem - will work it with media queries;*/
+  font-family: 'Raleway Light', sans-serif;
+  color: #2d2d2d;
+  text-align: center;
+  margin: 0 auto;
+  /* should I set up the max-width 1240px?*/
+}
+a {
+  text-decoration: none;
+  color: #e2574c;
+}
+a:hover{
+  color: #b64036;
+}
+h1, h2{
+  margin:0;
+  border:0;
+  text-shadow: #242424 1px 1px 2px;
+}
+h1{
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+h2{
+  text-transform: uppercase;
+  font-family: "Raleway";
+  font-weight: lighter;
+  font-size: 1.25rem;
+  padding-bottom:1rem;
+  padding-top: 140px;
+}
+h3 {
+  font-family: "Playfair Display",serif;
+  line-height: 1;
+  font-size: 2.4rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+  font-weight: lighter;
+}
+p{
+  font-family: "Raleway";
+  text-align: center;
+  margin:0 auto;
+  padding-bottom:3rem;
+  font-size: 1.15rem;
+  font-weight: lighter;
+}
+span {
+  font-weight: bold;
+  font-style: normal;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin:0;
+  border:0;
+}
+li{
+  display: inline;
+  padding: 0 10px;
+}
+/*NAVIGATION*/
+.full_nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  /*fixed navigation*/
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index:   1;
+  background-color: #ffff;
+  border-bottom: 1px solid #d7d7d7;
+  /*figuring out how to make shadow responsive*/
+  -webkit-box-shadow: 1px 1px 0.5px 0.5px rgba(215,215,215,1);
+  -moz-box-shadow: 1px 1px 0.5px 0.5px rgba(215,215,215,1);
+  box-shadow: 1px 1px 0.5px 0.5px rgba(215,215,215,1);
+}
+.container{
+  padding: 1% 2%;
+  margin: 0 auto;
+  width: 100%;
+}
+.logo{
+  order:1;
+  flex: 0 1 50%;
+  text-align: left;
+}
+.logo img{
+  max-width: 120px;
+}
+.shopping_icon{
+  flex: 0 1 50%;
+  text-align: right;
+  order:2;
+}
+.shopping_icon img{
+  width: 50px;
+  text-align: right;
+}
+.cart-items {
+    position: absolute;
+    right: .7rem;
+    font-weight: bold;
+    background: #e2574c;
+    color:#fff;
+    width: 1.6rem;
+    height: 1.6rem;
+    text-align: center;
+    line-height: 1.6rem;
+    border-radius: 50%;
+    visibility: hidden;
+    display: inline;
+}
+.menuwrapper{
+  order:3;
+  width: 100%;
+  color:#e2574c;
+}
+nav ul {
+   display: flex;
+   border-top:.1rem solid #d7d7d7;
+   justify-content: space-around;
+   padding: .5rem 20%;
+ }
+.menu_item{
+   padding: 0.5rem;
+   margin: 0 1rem;
+}
+.menu_item a{
+   font-size: 0.8rem;
+   text-transform: uppercase;
+   font-family: "Raleway";
+ }
+ li a:hover {
+ 	color:#b64036;
+ }
+/*MAIN PHOTO*/
+.intro{
+  background: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%),
+  url("../images/banner-girl.png"),
+  url("../images/flower-bkgd.jpg");
+  background-position: center,center 60px, top;
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-size: cover, 150px, cover;
+  color: white;
+  height: 400px;
+  display: flex;
+  margin-top: 100px;
+  position: relative; /*due to sticky navigation*/
+}
+.text-wrapp{
+  align-content: center;
+  margin:0 auto;
+}
+.year{
+  display: block;
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+}
+/*SHOP*/
+.about > .text-wrapp{
+  padding: 0 2%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.about p{
+  line-height: 2rem;
+}
+/*I have no idea why the code below is working, why there is .category-container and category-container div???*/
+.category-container{
+  display: flex;
+  flex-wrap:wrap;
+  height: 200vh;
+}
+.category-container div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #fff;
+  position: relative;
+}
+.men{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url("../images/mens-category.jpg");
+  background-size: cover;
+  flex:2 0 100%;
+  width: 100%;
+}
+.trends{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url("../images/trends-category.jpg");
+  background-size: cover;
+  flex:1 0 50%;
+  width: 50%;
+}
+.glasses{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url("../images/glasses-category.jpg");
+  background-size: cover;
+  flex:1 0 50%;
+  width: 50%
+}
+.sale{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url("../images/sale-category.jpg");
+    background-size: cover;
+    flex:1 0 50%;
+    width:50%;
+}
+.bags{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%), url("../images/bags-category.jpg");
+  background-size: cover;
+  flex:1 0 50%;
+  width: 50%;
+}
+.women{
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.25) 0%,rgba(0,0,0,0.25) 100%),
+   url("../images/womens-category.jpg");
+  background-size: cover;
+  flex:2 0 100%;
+  width: 100%;
+
+}
+.men.wide, .women.wide{
+    border-left: 0;
+    border-right: 0;
+}
+.trends.square, .sale.square{
+  border-left: 0;
+}
+.glasses.square, .bags.square{
+  border-right: 0;
+}
+.shop-text{
+  color: #fff;
+  font-family: 'Raleway',sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px hsla(0,0%,39%,.8);
+  text-transform: uppercase;
+}
+.shop-text a{
+  color:#fff;
+}
+.shop-text a:hover{
+  color:#b64036;
+}
+/*SLIDER-*/
+h4{
+  font-size: .75rem;
+  margin-bottom: .75rem;
+  text-transform: uppercase;
+}
+.slider{
+  height: 800px;
+}
+.store-category, .category-price{
+  color: #969696;
+  font-weight: lighter;
+}
+.category-text{
+  color: #e2574c;
+  font-size: 1.5rem;
+  /* margin-bottom: 1rem; */
+  line-height: 1;
+  font-family: 'Playfair Display',serif;
+  text-transform: capitalize;
+}
+.category-price{
+  padding: 0 0 1rem 0;
+  }
+.add-to-cart {
+    background-color: #242424;
+    border: 0;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+  }
+.carousel-cell {
+    width: 100%;
+    height: 600px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+.flickity-page-dots {
+      bottom: -10px;
+}
+.flickity-page-dots .dot {
+    display:inline;
+}
+.flickity-button-icon{
+  display:none;
+}
+/*NEWSLETTER--*/
+.newsletter{
+  height: 700px;
+  background: linear-gradient(180deg,rgba(0,0,0,.15) 0,rgba(0,0,0,.15)), url(../images/wave-bkgd.jpg) no-repeat bottom;
+  background-size: cover;
+  color:#ffff;
+  margin-bottom: 8px;
+}
+.subscription{
+  margin: 0 auto;
+  justify-content: center;
+  padding-top: 150px;
+  line-height: 2rem;
+}
+.newsletter-signup {
+  background: white;
+  width: 386px;
+  height: 3.4rem;
+  bottom: 2.5rem;
+  margin:0 auto;
+  border-radius:2rem;
+  display: flex;
+  justify-content: space-between;
+}
+#email {
+  border-radius:2rem;
+  border-style: none;
+  box-shadow: none;
+  width: 100%;
+  height:3rem;
+  font-family: 'Raleway',sans-serif;
+  padding: .5rem 1.75rem;
+}
+.subscribe_button {
+  background-color:#e2574c;
+  border-radius:2rem;
+  border-style: none;
+  box-shadow: none;
+  display:inline-block;
+  color:#ffffff;
+  font-size:1rem;
+  height:2.8rem;
+  padding:0 1.5rem;
+  top:.3rem;
+  margin:.3rem .2rem;
+  text-transform: capitalize;
+}
+/*FOOTER*/
+footer{
+  background-color: #242424;
+  color: #ffff;
+  padding: 4rem 0;
+}
+.address{
+  color: #969696
+}
+.contact a{
+  text-decoration: underline;
+  font-weight: normal;
+  color: #ffff;
+}
+.social-menu{
+  text-align: center;
+  font-weight: lighter;
+}
+.social-text p{
+  color: #ffff;
+  font-family: 'Raleway',serif;
+}
+footer a{
+  color: white;
+}
+footer p{
+  padding: 0 0 15px 0;
+  font-family: 'Playfair Display',serif;
+}
+.social-text p{
+  display: none;
+}
+
+/*MEDIA QUERIES*/
+/*TABLET*/
+@media only screen and (min-width: 600px){
+  body{
+    font-size:16px; /*1rem*/
+  }
+  section{
+        padding: 4rem 0;
+  }
+/*NAVIGATION*/
+.full_nav {
+    flex-wrap: nowrap;
+  }
+.year{
+    display: inline;
+  }
+.menuwrapper{
+    order:1;
+  }
+.shopping_icon img{
+    max-width: 120px;
+  }
+.intro{
+    background-size: cover,250px 615px,cover;
+    background-repeat: no-repeat, no-repeat, repeat;
+    height: 40rem;
+    margin-top: 50px;
+  }
+nav ul{
+    border: none;
+  }
+/*SHOP*/
+.category-container{
+  height: 100vh;
+}
+.men.wide{
+  border-left: 0;
+  border-right: 4px solid #fff;
+  flex-basis: 50%;
+}
+.women.wide{
+  border-right: 0;
+  border-left: 4px solid #fff;
+  flex-basis: 50%;
+}
+.trends.squre{
+  border-left: 4px solid #fff;
+}
+.square{
+  flex-basis: 25%;
+}
+/*SLIDER*/
+.carusel{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.carousel-cell{
+  width: 50%;
+}
+/*NEWSLETTER*/
+.newsletter{
+  height: 400px;
+}
+.subscription{
+    max-width: 720px;
+    padding: 0 2%;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /*FOOTER--*/
+  footer{
+    display: block;
+  }
+  .social-text p{
+    font-size: 16px;
+    display: inline;
+  }
+  i{
+    min-width: 25px
+  }
+  .social-menu{
+    flex-direction: column;
+    display: flex;
+    text-align: left;
+    justify-content: space-around
+  }
+  .footer-div{
+    display: flex;
+    justify-content: space-around;
+  }
+  .contact p{
+    text-align: left;
+  }
+}
+/*PC*/
+@media only screen and (min-width:1240px){
+.intro {
+    background-size: cover,250px 615px,contain;
+    background-repeat: no-repeat, no-repeat, repeat;
+    height: 40rem;
+}
+.year{
+  display: inline;
+}
+.carousel-cell{
+    width: 25%;
+}
+}
