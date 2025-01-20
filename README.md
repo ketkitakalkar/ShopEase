@@ -1,12 +1,14 @@
-#ShopEase Apparel Website
-This is the first project RedAcademy Spring 2018 | coding based on the mockup. Coded to learn basic HTML markup, CSS styling (no SASS) and JavaScript for smooth scrolling and email validation.
+ShopEase
+ShopEase is a modern, user-friendly e-commerce website designed to provide an intuitive shopping experience with easy navigation and customizable sections for showcasing products.
 
-## features:
-* simple one-page layout: 5 sections, full-width,
-* basic js and jQuery:
+# Features
+* Responsive design for all devices.
+* Smooth and easy-to-use navigation.
+* Customizable product showcase.
+* Technologies Used
+* HTML, CSS, JavaScript
 
-
-## coding specifics:
+# coding specifics:
 * mobile-first, tablet view, desktop view,
 * flexbox (no-floats),
 * responsive images,
